@@ -1,0 +1,42 @@
+// Reads the X and Y coordinates of three points and then 
+// outputs which of the three are closer.
+
+Point point1 = new Point();
+println("Please enter the first X coordinate: ");
+String str = System.console().readLine()
+point1.x = Double.parseDouble(str);
+println("Please enter the first Y coordinate: ");
+str = System.console().readLine();
+point1.y = Double.parseDouble(str);
+
+Point point2 = new Point();
+println("Please enter the second X coordinate: ");
+str = System.console().readLine()
+point2.x = Double.parseDouble(str);
+println("Please enter the second Y coordinate: ");
+point2.y = Double.parseDouble(str);
+
+Point point3 = new Point();
+println("Please enter the third X coordinate: ");
+point3.x = Double.parseDouble(str);
+println("Please enter the trhird Y coordinate: ");
+point3.y = Double.parseDouble(str);
+
+double distance1to2 = Math.sqrt(Math.pow(((point1.x - point2.x),2) + Math.pow()(point1.y - point2.y),2))
+double distance2to3 = Math.sqrt(Math.sq((point1.x - point2.x) + Math.sq(point1.y - point2.y))
+double distance1to3 = Math.sqrt(Math.sq((point1.x - point2.x) + Math.sq(point1.y - point2.y))
+String result = ""
+
+if(distance1to2 < distance2to3) {
+	if(distance1to2 < distance1to3) {
+		result = "1 to 2"
+	} else {
+		result = "1 to 3"
+} else {
+	result = "2 to 3"}
+	}
+
+class Point {
+	double x;
+	double y;
+}
