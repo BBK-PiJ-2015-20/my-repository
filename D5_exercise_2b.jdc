@@ -1,0 +1,13 @@
+// Use only for natural numbers
+
+println(fib(40));
+println(fib(45));
+
+int fib(int n) {
+	if(n < 3) {
+		return 1;
+	} else {
+		int result = (fib(n-1) + fib(n-2));
+		return result;
+	}
+}
